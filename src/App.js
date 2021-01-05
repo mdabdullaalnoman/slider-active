@@ -6,6 +6,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import Booking from './Components/Booking/Booking';
 
 function App() {
   return (
@@ -16,6 +17,10 @@ function App() {
           <Home></Home>
        </Route>
 
+        <Route path="/booking:bookingId">
+           <Booking></Booking>
+        </Route>
+        
      </Switch>
    </Router>
   );

@@ -7,7 +7,7 @@ const SliderLeft = (props) => {
         <div style={{color:'white'}}>
             <h1>{tittle}</h1>
             <p>{description}</p>
-            <Link to="/booking"><button className="btn btn-outline-warning">Booking >></button></Link>
+            <Link to={`/booking${id}`}><button className="btn btn-outline-warning">Booking >></button></Link>
         </div>
     );
 };

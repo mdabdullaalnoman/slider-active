@@ -1,7 +1,7 @@
-.bg-gradient{
+#gradient-bg{
     background-image:linear-gradient( rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.664)), url(https://i.imgur.com/Wgk2bYt.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%; 
-    height: 600px;  
-}
+  }

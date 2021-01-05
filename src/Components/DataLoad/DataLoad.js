@@ -28,12 +28,12 @@ const DataLoad = () => {
         <div>
             <div className="container">
                 <div className="row my-5 justify-content-center align-items-center">
-                    <div className="col-4">
+                    <div className="col-12 col-md-4">
                         {
                             showData.map( LeftInfo => <SliderLeft LeftInfo={LeftInfo}></SliderLeft>)
                         }
                     </div>
-                    <div className="col-8">
+                    <div className="col-12 col-md-8">
                         <div className="row">
                         <Swiper
                             spaceBetween={10}
@@ -51,15 +51,13 @@ const DataLoad = () => {
                             >
                             {
                                     SliderInfo.map( data => ( 
-                                        <SwiperSlide>
-                                        <div>
-                                            <div className="col-md-4">
+                                        <SwiperSlide>                                        
+                                            <div className="col-md-3">
                                                <div className=" mx-auto">
                                                     <img onClick={() =>handelShowData(data)}  src={data.image} className="image-fluid" style={{height:'300px' }} alt="image"/>
-                                                    <h3>{data.tittle}</h3>
+                                                    <h5 style={{color:'white'}}>{data.tittle}</h5>
                                                 </div>
-                                            </div>
-                                        </div>
+                                            </div>                                     
                                         </SwiperSlide>
                                     ))
                                 }
